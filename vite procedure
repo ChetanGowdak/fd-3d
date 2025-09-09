@@ -1,6 +1,8 @@
-first go to the folder where you need to run the server
+install node js
+go to the folder where you need to run the server
 go to terminal and install by running this in terminal npm install vite
 now tow pakages have been created one pakage.jason and the other pakage-lock.jason
 go to pakage.jason and add "dev":"vite" in script section 
 this will enable the server
 to run the server npm run dev
+now install three js by npm install three

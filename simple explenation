@@ -1,0 +1,33 @@
+1. PerspectiveCamera Exploration
+•	Configured key parameters:
+o	fov (field of view) to control zoom level
+o	aspect ratio based on canvas dimensions
+o	near and far clipping planes to define visible range
+•	Positioned the camera using .position.set(x, y, z) and oriented it with .lookAt(x, y, z).
+•	Used .updateProjectionMatrix() to apply changes dynamically.
+2. Camera Movement
+•	Implemented keyboard-based movement using keydown and keyup events.
+•	Mapped arrow keys to control camera movement along the X and Z axes.
+•	Updated camera.position in the animation loop for real-time navigation.
+3. OrbitControls Integration
+•	Enabled mouse-based interaction using OrbitControls.
+•	Explored features such as:
+o	enableDamping for smooth transitions
+o	dampingFactor to control inertia
+o	autoRotate for continuous rotation
+o	target.set() to focus the camera on specific objects
+•	Called controls.update() within the animation loop to apply damping and rotation.
+4. Lighting Techniques
+•	Added multiple light sources to enhance realism:
+o	DirectionalLight to simulate sunlight
+o	AmbientLight for soft, global illumination
+•	Used DirectionalLightHelper to visualize the direction and intensity of the directional light.
+5. Scene Helpers
+•	Introduced AxesHelper to visualize the X, Y, and Z axes.
+•	Added GridHelper to simulate a ground plane and assist with object placement.
+6. Geometry and Layout
+•	Created BoxGeometry and PlaneGeometry to build the scene.
+•	Aligned the plane along the X-axis and adjusted its position and rotation to meet layout requirements.
+•	Used .position.set() and .rotateX() to orient the plane correctly.
+
+
